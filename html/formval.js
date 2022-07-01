@@ -59,3 +59,6 @@ function validateForm(){
 
     return returnval;
 }
+
+localStorage.setItem('name')
+localStorage.setItem('email')
