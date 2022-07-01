@@ -32,7 +32,7 @@ function validateForm(){
     }
 
     var email = document.forms['myForm']["femail"].value;
-    if (email.length>15){
+    if (email.length>25){
         seterror("email", "*Email length is too long");
         returnval = false;
     }
