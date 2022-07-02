@@ -1,5 +1,8 @@
-body {
+body  {
+    
     padding: 10px 50px;
+    background: rgba(150, 255, 146, 0.877);
+    
 }
 
 .formdesign {

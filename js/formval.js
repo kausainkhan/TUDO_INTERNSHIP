@@ -60,44 +60,5 @@ function validateForm(){
     return returnval;
 }
 
-// let name = document.querySelector("#name").value;
-// function send(){
-//     console.log(name.value);
-// }
-
-let name = document.getElementById("name");
-function send(){
-console.log(name);
-}
-
-
-let email =document.getElementById('email');
-function send(){
-console.log(email);
-}
-
-let phone =document.getElementById('phone');
-function send(){
-console.log(phone);
-}
-
-let city = document.querySelector('#city');
-function send(){
-console.log(city);
-}
-
-let gender = document.querySelector('input[name="class"]:checked');
-function send(){
-console.log(gender);
-}
-
-let course=[];
-let checkbox= document.getElementsByName('course[]');
-for(let i=0; i<checkbox.length; i++) {
-    if (checkbox[i].checked){
-          course.push(checkbox[i].value);
-    }
-}
-// function send(){}
-console.log(course);
-
+localStorage.setItem('name','name')
+//localStorage.setItem('email')

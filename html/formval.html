@@ -7,30 +7,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JavaScript Form Validation</title>
     <link rel="stylesheet" href="formval.css">
-
+    <script>document.addEventListener("DOMContentLoaded", () => {
+        alert("DOM ready!");
+      });</script>
+    <script src="formval.js"></script>
 </head>
 
 <body>
+    
+    
     <h1>Welcome to the best form on Internet!</h1>
-    <form aciton="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+    <form name="myForm" onsubmit="return validateForm()" method="post">
         <div class="formdesign" id="name">
-            Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+            Name:
+              <!-- <input type="text" placeholder="name" id="name" /> -->
+             <input type="text" name="fname" required><b><span class="formerror"> </span></b> 
         </div>
 
         <div class="formdesign" id="email">
-            Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+            Email: 
+            <!-- <input type="email" placeholder="email" id="email" /> -->
+            <input type="email" name="femail" required><b><span class="formerror"> </span></b> 
         </div>
 
         <div class="formdesign" id="phone">
-            Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+            Phone: 
+            <!-- <input type="phone" placeholder="phone" id="phone" /> -->
+            <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
         </div>
 
         <div class="formdesign" id="pass">
-            Password: <input type="password" name="fpass" required><b><span class="formerror" </span></b>
+            Password:
+             <!-- <input type="phone" placeholder="password" id="pass" /> -->
+             <input type="password" name="fpass" required><b><span class="formerror"></span></b>
         </div>
 
         <div class="formdesign" id="cpass">
-            Confirm Password: <input type="password" name="fcpass" required><b><span class="formerror"></span></b>
+            Confirm Password: 
+            <!-- <input type="phone" placeholder="confirmpassword" id="cpass" /> -->
+         <input type="password" name="fcpass" required><b><span class="formerror"></span></b> 
         </div>
 
         <br>
@@ -45,22 +60,22 @@
         <br>
         <h4>Select your programming language</h4>
         <label for="python">
-            <input type="checkbox" name="python" id="103">pyhton
+            <input type="checkbox" name="course[]" value="python" id="103">pyhton
 
         </label>
         <br>
         <label for="c++">
-            <input type="checkbox" name="c++" id="104">c++
+            <input type="checkbox" name="course[]" value="c++" id="104">c++
 
         </label>
         <br>
         <label for="java">
-            <input type="checkbox" name="chem" id="105">java
+            <input type="checkbox" name="course[]" value="java" id="105">java
 
         </label>
         <br>
         <label for="c">
-            <input type="checkbox" name="eng" id="106">c
+            <input type="checkbox" name="course[]" value="c"  id="106">c
 
         </label>
 
@@ -76,10 +91,33 @@
         </label>
         <br><br><br><br><br>
         <!-- <form id="get" onsubmit="return validate()" action="myaction.php"></form> -->
-        <input class="but" type="submit" value="Submit">
+         <!-- <input class="but" type="submit" value="Submit">  -->
+        - <input type="text" placeholder="name" id="name" />
+        <!-- <input type="email" placeholder="name" id="email" /> --> 
+        <!-- <input type="phone" placeholder="name" id="phone" /> -->
+        <!-- <input type="radio" placeholder="name" id="101" /> -->
+        <!-- <input type="radio" placeholder="name" id="102" />
+        <input type="checkbox" placeholder="name" id="103" />
+        <input type="checkbox" placeholder="name" id="104" />
+        <input type="checkbox" placeholder="name" id="105" />
+        <input type="checkbox" placeholder="name" id="106" />
+        <input type="city" placeholder="name" id="108" /> -->
+
+        <input type ="buttom" value ="submit" onclick="send()"/>
         
     </form>
-</body>
-<script src="formval.js"></script>
+    <!-- <script>
 
+        let names=[];
+        const name =(ev) =>{
+         ev.preventDefault();
+         let name ={
+           title: document.getElementById('name').value,
+         }
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("button").addEventListener('click',name)
+        alert("DOM ready!");
+      });</script> -->
+</body>
 </html>
