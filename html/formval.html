@@ -17,35 +17,30 @@
     
     
     <h1>Welcome to the best form on Internet!</h1>
-    <form name="myForm" onsubmit="return validateForm()" method="post">
-        <div class="formdesign" id="name">
+    <form id="form">
+        <div class="formdesign" >
             Name:
-              <!-- <input type="text" placeholder="name" id="name" /> -->
-             <input type="text" name="fname" required><b><span class="formerror"> </span></b> 
+             <input id="name" type="text" placeholder="Enter your Name" required><b><span class="formerror"> </span></b> 
         </div>
 
-        <div class="formdesign" id="email">
+        <div class="formdesign" >
             Email: 
-            <!-- <input type="email" placeholder="email" id="email" /> -->
-            <input type="email" name="femail" required><b><span class="formerror"> </span></b> 
+            <input id="email" placeholder="Enter your Email" required><b><span class="formerror"> </span></b> 
         </div>
 
-        <div class="formdesign" id="phone">
+        <div class="formdesign" >
             Phone: 
-            <!-- <input type="phone" placeholder="phone" id="phone" /> -->
-            <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+            <input id="phone" placeholder="Enter your mobile number" required><b><span class="formerror"></span></b>
         </div>
 
-        <div class="formdesign" id="pass">
+        <div class="formdesign" >
             Password:
-             <!-- <input type="phone" placeholder="password" id="pass" /> -->
-             <input type="password" name="fpass" required><b><span class="formerror"></span></b>
+             <input id="pass" type="password"  required><b><span class="formerror"></span></b>
         </div>
 
         <div class="formdesign" id="cpass">
             Confirm Password: 
-            <!-- <input type="phone" placeholder="confirmpassword" id="cpass" /> -->
-         <input type="password" name="fcpass" required><b><span class="formerror"></span></b> 
+         <input type="password"  required><b><span class="formerror"></span></b> 
         </div>
 
         <br>
@@ -90,34 +85,13 @@
             </select>
         </label>
         <br><br><br><br><br>
-        <!-- <form id="get" onsubmit="return validate()" action="myaction.php"></form> -->
-         <!-- <input class="but" type="submit" value="Submit">  -->
-        - <input type="text" placeholder="name" id="name" />
-        <!-- <input type="email" placeholder="name" id="email" /> --> 
-        <!-- <input type="phone" placeholder="name" id="phone" /> -->
-        <!-- <input type="radio" placeholder="name" id="101" /> -->
-        <!-- <input type="radio" placeholder="name" id="102" />
-        <input type="checkbox" placeholder="name" id="103" />
-        <input type="checkbox" placeholder="name" id="104" />
-        <input type="checkbox" placeholder="name" id="105" />
-        <input type="checkbox" placeholder="name" id="106" />
-        <input type="city" placeholder="name" id="108" /> -->
+       
 
-        <input type ="buttom" value ="submit" onclick="send()"/>
+        <input type ="submit" value ="submit">
         
     </form>
-    <!-- <script>
 
-        let names=[];
-        const name =(ev) =>{
-         ev.preventDefault();
-         let name ={
-           title: document.getElementById('name').value,
-         }
-        }
-        document.addEventListener("DOMContentLoaded", () => {
-            document.getElementById("button").addEventListener('click',name)
-        alert("DOM ready!");
-      });</script> -->
+    <script src="formval.js"></script>
 </body>
+
 </html>

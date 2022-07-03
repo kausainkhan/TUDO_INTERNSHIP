@@ -1,3 +1,4 @@
+// FORM VALIDATION
 function clearErrors(){
 
     errors = document.getElementsByClassName('formerror');
@@ -60,44 +61,20 @@ function validateForm(){
     return returnval;
 }
 
-// let name = document.querySelector("#name").value;
-// function send(){
-//     console.log(name.value);
-// }
 
-let name = document.getElementById("name");
-function send(){
-console.log(name);
-}
+// consle
+var form = document.getElementById('form')
+    form.addEventListener('submit',function(event){
+        event.preventDefault() //prevent form from auto submit
+        var name = document.getElementById('name').value
+        console.log(name)
+        var email = document.getElementById('email').value
+        console.log(email)
+        var phone = document.getElementById('phone').value
+        console.log(phone)
+        var pass = document.getElementById('pass').value
+        console.log(pass)
 
 
-let email =document.getElementById('email');
-function send(){
-console.log(email);
-}
 
-let phone =document.getElementById('phone');
-function send(){
-console.log(phone);
-}
-
-let city = document.querySelector('#city');
-function send(){
-console.log(city);
-}
-
-let gender = document.querySelector('input[name="class"]:checked');
-function send(){
-console.log(gender);
-}
-
-let course=[];
-let checkbox= document.getElementsByName('course[]');
-for(let i=0; i<checkbox.length; i++) {
-    if (checkbox[i].checked){
-          course.push(checkbox[i].value);
-    }
-}
-// function send(){}
-console.log(course);
-
+    })

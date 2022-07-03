@@ -95,11 +95,11 @@ $(document).ready(function () {
     // $('#wiki').animate({ opacity: 0.9 }, 1000);
     // $('#wiki').animate({ width: '350px' }, 12000);
 
-    // $('#ta').val('setting it to harry');
-    // $('#ta').html('setting it to harry');
-    // $('#ta').html('setting it to harry3');
-    // $('#inp').html('setting it to harry3');
-    // $('#inp').val('setting it to harry3');
+    // $('#ta').val('setting it to kausain');
+    // $('#ta').html('setting it to kausain');
+    // $('#ta').html('setting it to kausain3');
+    // $('#inp').html('setting it to kausain3');
+    // $('#inp').val('setting it to kausain3');
     // $('#inp').empty()
     // $('#wiki').empty()
     // $('#wiki').text('you are good')
