@@ -3,50 +3,159 @@
 
 <head>
     <title> TUDO APPLICATION</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script>document.addEventListener("DOMContentLoaded", () => {
+            alert("DOM ready!");
+        });</script>
+    <script src="app.css"></script>
 </head>
 
 <body>
-    <h1>TUDO APPLICATION</h1>
-    <p>Track tudos never bfr</p>
-    <form>
-        <input type ='text' class ='new-tudo' placeholder='enter tudo'/>
-        <button type ='submit' class=" submit-tudo">Add</button>
-        </form>
-        <br/>
-    <input type ='text' class="search-tudo" placeholder="filter tudos" />
-    <div class="tudos"></div>
+    <div class=" wrapper">
+        <div class='content'>
+            <h1>TUDO APPLICATION</h1>
+            <p>Track tudos never bfr</p>
+            <form>
+                <input type='text' class='new-tudo' placeholder='enter tudo' />
+                <button type='submit' class=" submit-tudo">Add</button>
+                </br>
+                <input type='text' class="search-tudo" placeholder="filter tudos" />
+                <div class="tudos"></div></br>
+                <label>
+                    <input type="checkbox" class="hidecompleted" />hide completed
+                </label>
+                <h5> class ="status"></h5>
+                <div class="formdesign">
+                    Name:
+                    <input id="name" type="text" placeholder="Enter your Name" required><b><span class="formerror">
+                        </span></b>
+                    <button type='submit' class=" submit-tudo">Add</button>
+                </div>
+
+                <div class="formdesign">
+                    Email:
+                    <input id="email" placeholder="Enter your Email" required><b><span class="formerror"> </span></b>
+                    <button type='submit' class=" submit-tudo">Add</button>
+                </div>
+
+                <div class="formdesign">
+                    Phone:
+                    <input id="phone" placeholder="Enter your mobile number" required><b><span
+                            class="formerror"></span></b>
+                    <button type='submit' class=" submit-tudo">Add</button>
+                </div>
+
+                <div class="formdesign">
+                    Password:
+                    <input id="pass" type="password" required><b><span class="formerror"></span></b>
+                    <button type='submit' class=" submit-tudo">Add</button>
+                </div>
+
+                <div class="formdesign" id="cpass">
+                    Confirm Password:
+                    <input type="password" required><b><span class="formerror"></span></b>
+                    <button type='submit' class=" submit-tudo">Add</button>
+                </div>
+
+                <br>
+                <label for="101">
+                    Gender: <input type="radio" value="Male" name="class" id="101">Male
+                </label>
+                <br>
+                <label for="102">
+                    <input type="radio" value="female" name="class" id="102">female
+                </label>
+                <br>
+                <br>
+                <h4>Select your programming language</h4>
+                <label for="python">
+                    <input type="checkbox" name="course[]" value="python" id="103">pyhton
+
+                </label>
+                <br>
+                <label for="c++">
+                    <input type="checkbox" name="course[]" value="c++" id="104">c++
+
+                </label>
+                <br>
+                <label for="java">
+                    <input type="checkbox" name="course[]" value="java" id="105">java
+
+                </label>
+                <br>
+                <label for="c">
+                    <input type="checkbox" name="course[]" value="c" id="106">c
+
+                </label>
+
+                <label>
+                    <h4>select your city</h4>
+                    <select name="city" id="108">
+                        <option value="Delhi">Delhi</option>
+                        <option value="Alld">Alld</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Kanpur">Kanpur</option>
+                        <option value="Lucknow">Lucknow</option>
+                    </select>
+                </label>
+                <br><br><br><br><br>
 
 
+                <input type="submit" value="submit">
 
-    
-         <!-- Import the functions you need from the SDKs you need -->
-        <script src = "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js"></script>
-        <script src = "https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js"></script>
-    
-         <!-- TODO: Add SDKs for Firebase products that you want to use -->
-         <!-- https://firebase.google.com/docs/web/setup#available-libraries -->
-      <script>
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
-          apiKey: "AIzaSyDhZRbemeM6_qiuQ_oXfQR0BpSYH896f4I",
-          authDomain: "intern-tudo.firebaseapp.com",
-          databaseURL: "https://intern-tudo-default-rtdb.firebaseio.com",
-          projectId: "intern-tudo",
-          storageBucket: "intern-tudo.appspot.com",
-          messagingSenderId: "199755981389",
-          appId: "1:199755981389:web:3f47fa5917b62b77cff204",
-          measurementId: "G-4FVVZKGMPD"
-        };
-      
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.firestore();
-</script>
- <script src ='http://wzrd.in/standalone/uuid%2Fv4@latest'></script> 
+            </form>
+        </div>
+    </div>
 
-<script src="jquery.js"></script>
-    <script src="app.js"></script>
+    <div class=" tudos"></div>
+    </div>
+    </div>
+    <div class="foooter">
+        <div class="container">
+            <div class=" row">
+                <div class="'col-md-12">
+                    <p>Designed and Developed by B2TTech (c)<a href="https:bushansirgur.in>b2tech</a></a></p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  </div>
+
+    <!-- Import the functions you need from the SDKs you need -->
+    <script src=" https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js"></script>
+                            <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js"></script>
+                            <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+
+                            <!-- TODO: Add SDKs for Firebase products that you want to use -->
+                            <!-- https://firebase.google.com/docs/web/setup#available-libraries -->
+                            <script type="module">
+        //import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+                                /**  import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js";
+                                   Your web app's Firebase configuration
+                                  For Firebase JS SDK v7.20.0 and later, measurementId is optional
+                                  var firebaseConfig = {
+                                      apiKey: "AIzaSyDhZRbemeM6_qiuQ_oXfQR0BpSYH896f4I",
+                                      authDomain: "intern-tudo.firebaseapp.com",
+                                      databaseURL: "https://intern-tudo-default-rtdb.firebaseio.com",
+                                      projectId: "intern-tudo",
+                                      storageBucket: "intern-tudo.appspot.com",
+                                      messagingSenderId: "199755981389",
+                                      appId: "1:199755981389:web:3f47fa5917b62b77cff204",
+                                      measurementId: "G-4FVVZKGMPD"
+                                  };
+                          
+                                  // Initialize Firebase
+                                  const app = initializeApp(firebaseConfig);
+                                  const db = getFirestore(app);**/
+                            </script>
+                            <script type="module">
+                                import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
+                                console.log(uuidv4()); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+                            </script>
+                            <!-- <script src ="app.css"></script> -->
+                            <script src="jquery.js"></script>
+                            <script src="app.js" type="module"></script>
 </body>
 
 </html>
