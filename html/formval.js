@@ -75,6 +75,16 @@ var form = document.getElementById('form')
         var pass = document.getElementById('pass').value
         console.log(pass)
 
+           $("#104").submit(function() {
+                $("input.test[type=checkbox]:checked").each(function() {
+                    //alert($(this).val());
+                    console.log($(this).val());
+                });
+        
+                return false;
+            });
+
+
 
 
     })
